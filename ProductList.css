@@ -1,0 +1,52 @@
+/* Using Flexbox for styling purposes. 
+This file is mostly in place to keep the recipe cards in a horizontal order, 
+as opposed to having to scroll down to see them all. */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #beb3b3;
+}
+
+h2, p {
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  li {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    background-color: #e2d9d9;
+    border: 1px solid #e0e0e0;
+  }
+
+  li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
